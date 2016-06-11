@@ -1,0 +1,52 @@
+<div class="ui main text container">
+  <div class="ui segment piled">
+    <h2 class="ui header">What's <em>Concerned Citizen</em> ?</h2>
+    <p>
+      It's a simple service that let citizen report any delay (&nbsp;🚌&nbsp; at first, but we'll be extended to 🚆&nbsp;) or any broken mobility related stuff (vending machine, validator, ...).
+    </p>
+    <p>
+      This project was built during the <a href="http://hackathon.syn2cat.lu" title="Visit the hackathon website">Hackathon B-Side</a> at <a href="http://level2.lu" title="Visit level2 website">Level2</a> and is based on some <a href="http://data.public.lu"
+          title="Open Data Luxembourg">open data available in Luxembourg</a>.
+    </p>
+  </div>
+  <h3>🛠&nbsp;&nbsp;Opened issues</h3>
+  <div class="ui feed">
+    {{#each model.data as |report|}}
+      <div class="event">
+        {{#if report.bus}}
+          <div class="label"><i class="shipping icon"></i></div>
+        {{else}}
+          {{#if report.stop}}
+            <div class="label"><i class="marker icon"></i></div>
+          {{else}}
+            {{#if report.line}}
+              <div class="label"><i class="road icon"></i></div>
+            {{else}}
+              <div class="label"><i class="bullseye icon"></i></div>
+            {{/if}}
+          {{/if}}
+        {{/if}}
+        <div class="content">
+          <div class="summary">
+            A new report has been filled
+            <div class="date">
+              {{report.dt_create}}
+            </div>
+          </div>
+          {{#if report.comment}}
+            <div class="extra text">
+              {{report.comment}}
+            </div>
+          {{/if}}
+          <div class="meta">
+            <a class="like">
+              <i class="like icon"></i> 4 Likes
+            </a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  {{outlet}}
+</div>
