@@ -51,3 +51,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+## Credits
+
+- [GeoJSON reparser for mobiliteit](http://geojson.konnen.lu/)
+>>>>>>> 298967ea9249c3f35ce92d7b0456381142cffe3f
