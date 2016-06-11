@@ -1,6 +1,6 @@
 const request = require( 'request' );
 const stamplay = require( 'stamplay' );
-var _s = new stamplay( "mobiliteit", "5f9712b9eff418239bbda71aff71255e7d8e2b9f88f711ef9c5271bc397e11dc" );
+var _s = new stamplay( "mobiliteit", "4d248d96f2a90464be8ac3f207d16afede7a5c95bebaac28a46caa110560bb95" );
 
 request( 'http://opendata.vdl.lu/odaweb/index.jsp?describe=1', function ( error, response, body ) {
     if ( !error && response.statusCode == 200 ) {
