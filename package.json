@@ -1,0 +1,26 @@
+{
+  "name": "mobiliteit-decentral",
+  "version": "0.0.1",
+  "description": "A decentralized version of mobiliteit central",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clawfire/mobiliteit-decentral.git"
+  },
+  "keywords": [
+    "bus",
+    "luxembourg",
+    "vdl",
+    "mobiliteit",
+    "mobility"
+  ],
+  "author": "Thibault Milan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clawfire/mobiliteit-decentral/issues"
+  },
+  "homepage": "https://github.com/clawfire/mobiliteit-decentral#readme"
+}
